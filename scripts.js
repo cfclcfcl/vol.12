@@ -1,8 +1,34 @@
 document.addEventListener("DOMContentLoaded", () => {
   const body = document.body;
+  const root = document.documentElement;
   body.classList.add("hero-ready");
   body.classList.add("hero-active");
   const snapContainer = document.querySelector(".snap-container");
+
+  const updateViewportVars = () => {
+    const visibleHeight =
+      window.visualViewport?.height || window.innerHeight || 0;
+    const screenHeight = window.screen?.height || visibleHeight;
+    const isNarrowViewport = window.matchMedia("(max-width: 640px)").matches;
+    const heroHeight = isNarrowViewport
+      ? Math.max(visibleHeight, screenHeight)
+      : visibleHeight;
+
+    root.style.setProperty("--viewport-height", `${visibleHeight}px`);
+    root.style.setProperty("--hero-screen-height", `${heroHeight}px`);
+  };
+
+  updateViewportVars();
+  window.addEventListener("resize", updateViewportVars, { passive: true });
+  window.addEventListener("orientationchange", updateViewportVars, {
+    passive: true,
+  });
+  window.visualViewport?.addEventListener("resize", updateViewportVars, {
+    passive: true,
+  });
+  window.visualViewport?.addEventListener("scroll", updateViewportVars, {
+    passive: true,
+  });
 
   const scrollButtons = document.querySelectorAll("[data-target]");
 
