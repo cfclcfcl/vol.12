@@ -1040,7 +1040,7 @@ body:not(.hero-active) .hero-language-caption {
   }
 
   .categories-wrapper .category-image-grid img {
-    aspect-ratio: 1 / 1.24;
+    aspect-ratio: 1 / 1.5;
     width: 100%;
     height: auto;
     object-fit: contain;
@@ -1086,7 +1086,7 @@ body:not(.hero-active) .hero-language-caption {
 
   .veja-inner {
     gap: 0.55rem;
-    padding-top: 0.35rem;
+    padding-top: 1rem;
     padding-bottom: 0.45rem;
   }
 
@@ -1133,7 +1133,7 @@ body:not(.hero-active) .hero-language-caption {
   }
 
   .artist-inner {
-    gap: 1.55rem;
+    gap: 2.2rem;
     padding-top: 1rem;
     padding-bottom: 1.6rem;
   }
@@ -1147,7 +1147,7 @@ body:not(.hero-active) .hero-language-caption {
     text-align: center;
     font-size: 0.92rem;
     letter-spacing: 0.06em;
-    margin-bottom: 0.7rem;
+    margin-bottom: 1.4rem;
   }
 
   .artist-image img {
@@ -1203,10 +1203,14 @@ body:not(.hero-active) .hero-language-caption {
     letter-spacing: 0.08em;
   }
 
+  .staff-inner {
+    padding-top: 1rem;
+  }
+
   .veja-logo-small {
     width: 74px;
     display: block;
-    margin: 0.9rem auto 0;
+    margin: 1.6rem auto 1rem;
   }
 
   .contact-inner .eyebrow {
@@ -1222,14 +1226,27 @@ body:not(.hero-active) .hero-language-caption {
   }
 
   .contact-columns {
-    margin-top: 1.35rem;
+    margin-top: 2rem;
     gap: 1.65rem;
+  }
+
+  .contact-column p + .contact-subtitle {
+    margin-top: 1.4rem;
   }
 
   .contact-column p {
     font-size: 0.95rem;
     line-height: 1.45;
     margin-bottom: 0.8rem;
+  }
+
+  .pfw-logo {
+    margin-top: 2.5rem;
+  }
+
+  .back-to-top-button img {
+    width: 18px;
+    height: 18px;
   }
 
   .categories-inner {
