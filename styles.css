@@ -270,6 +270,12 @@ body:not(.hero-active) .hero-language-caption {
   display: block;
 }
 
+.intro-image,
+.veja-image,
+.artist-image {
+  margin: 0;
+}
+
 .intro-heading {
   margin: 0 0 1.1rem;
   text-align: right;
@@ -990,7 +996,7 @@ body:not(.hero-active) .hero-language-caption {
 
   .sticky-cat-heading {
     top: 2.5rem;
-    padding: 0.7rem 2rem 0.7rem;
+    padding: 1.3rem 2rem 0.7rem;
   }
 
   .sticky-cat-heading .category-title {
@@ -1089,7 +1095,7 @@ body:not(.hero-active) .hero-language-caption {
   }
 
   .veja-image img {
-    height: 9.7rem;
+    height: 11.4rem;
     object-fit: contain;
     object-position: center;
     transform: none;
