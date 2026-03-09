@@ -9,9 +9,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const visibleHeight =
       window.visualViewport?.height || window.innerHeight || 0;
     const screenHeight = window.screen?.height || visibleHeight;
+    const outerHeight = window.outerHeight || visibleHeight;
     const isNarrowViewport = window.matchMedia("(max-width: 640px)").matches;
     const heroHeight = isNarrowViewport
-      ? Math.max(visibleHeight, screenHeight)
+      ? Math.max(visibleHeight, screenHeight, outerHeight)
       : visibleHeight;
 
     root.style.setProperty("--viewport-height", `${visibleHeight}px`);
