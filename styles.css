@@ -701,7 +701,9 @@ body:not(.hero-active) .hero-language-caption {
   background: none;
   cursor: pointer;
   font: inherit;
-  color: inherit;
+  mix-blend-mode: darken;
+  opacity: 0.96;
+  filter: grayscale(1) contrast(1.35);
 }
 
 .back-to-top-text {
