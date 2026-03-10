@@ -1004,17 +1004,18 @@ body:not(.hero-active) .hero-language-caption {
   }
 
   .sticky-rep-heading {
-    padding: 1rem 2rem 0.95rem;
+    padding: 1.2rem 2rem 0.95rem;
   }
 
   .sticky-rep-heading .eyebrow {
     font-size: 0.92rem;
     letter-spacing: 0.06em;
+    font-weight: 600;
   }
 
   .sticky-cat-heading {
     top: 2.5rem;
-    padding: 1.3rem 2rem 0.7rem;
+    padding: 1.7rem 2rem 0.7rem;
   }
 
   .sticky-cat-heading .category-title {
@@ -1032,7 +1033,7 @@ body:not(.hero-active) .hero-language-caption {
   }
 
   .categories-wrapper .category-snap-inner {
-    padding-top: 11.8rem;
+    padding-top: 12.3rem;
     height: var(--viewport-height);
     min-height: 0;
     gap: 0.95rem;
