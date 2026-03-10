@@ -1276,7 +1276,7 @@ body:not(.hero-active) .hero-language-caption {
   .pfw-logo {
     /* Pull the Paris Fashion Week logo higher so it remains clearly visible
        when the bottom browser bar is present. */
-    margin-top: 2.75rem;
+    margin-top: 1rem;
   }
 
   .back-to-top-button img {
