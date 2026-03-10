@@ -1117,7 +1117,7 @@ body:not(.hero-active) .hero-language-caption {
 
   .veja-image img {
     width: 100%;
-    max-width: 26rem;
+    max-width: 16rem;
     height: auto;
     aspect-ratio: 1 / 1.05;
     object-fit: cover;
@@ -1224,7 +1224,7 @@ body:not(.hero-active) .hero-language-caption {
   }
 
   .veja-logo-small {
-    width: 60px;
+    width: 45px;
     display: block;
     margin: 1.6rem auto 1rem;
   }
