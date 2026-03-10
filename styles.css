@@ -806,7 +806,7 @@ body:not(.hero-active) .hero-language-caption {
 
   .category-snap-grid {
     grid-template-columns: minmax(0, 1fr);
-    gap: 1rem;
+    gap: .5rem;
   }
 
   .category-copy .category-title {
