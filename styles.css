@@ -630,7 +630,7 @@ body:not(.hero-active) .hero-language-caption {
 }
 
 .veja-logo-small {
-  width: 74px;
+  width: 60px;
   clip-path: polygon(12% 0, 88% 0, 100% 12%, 100% 88%, 88% 100%, 12% 100%, 0 88%, 0 12%);
 }
 
@@ -1116,10 +1116,14 @@ body:not(.hero-active) .hero-language-caption {
   }
 
   .veja-image img {
-    height: 24.4rem;
-    object-fit: contain;
+    width: 100%;
+    max-width: 26rem;
+    height: auto;
+    aspect-ratio: 1 / 1.05;
+    object-fit: cover;
     object-position: center;
     transform: none;
+    margin-inline: auto;
   }
 
   .veja-text p {
@@ -1220,7 +1224,7 @@ body:not(.hero-active) .hero-language-caption {
   }
 
   .veja-logo-small {
-    width: 74px;
+    width: 60px;
     display: block;
     margin: 1.6rem auto 1rem;
   }
@@ -1367,6 +1371,23 @@ body:not(.hero-active) .hero-language-caption {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
   }
+
+  /* Very short viewports: make hero logo + lockup more compact so buttons don't overlap VOL.12 */
+  .hero-logo {
+    width: clamp(110px, 26vw, 130px);
+  }
+
+  .hero-logo-lockup {
+    gap: 0.85rem;
+  }
+
+  .hero-volume {
+    font-size: 0.82rem;
+  }
+
+  :root {
+    --hero-button-height: 2.7rem;
+  }
 }
 
 @media (min-width: 901px) {
@@ -1511,6 +1532,26 @@ body:not(.hero-active) .hero-language-caption {
 @media (min-width: 1800px) {
   .hero-logo {
     width: clamp(176px, 9.5vw, 180px);
+  }
+}
+
+/* Small screens: globally nudge type down slightly so layered content has more room */
+@media (max-width: 640px) {
+  html {
+    font-size: 15px;
+  }
+
+  /* Extra breathing room at the bottom of the Bark / FLUFFY FRINGE FOIL section so
+     its last line doesn't visually collide with the VEJA heading when snapping */
+  #section-4 .category-snap-inner,
+  #section-4b .category-snap-inner {
+    padding-bottom: 3.4rem;
+  }
+}
+
+@media (max-width: 360px) {
+  html {
+    font-size: 14px;
   }
 }
 
