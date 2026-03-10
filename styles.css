@@ -1008,7 +1008,7 @@ body:not(.hero-active) .hero-language-caption {
   }
 
   .sticky-rep-heading .eyebrow {
-    font-size: 0.92rem;
+    font-size: 0.98rem;
     letter-spacing: 0.06em;
     font-weight: 600;
   }
@@ -1094,7 +1094,7 @@ body:not(.hero-active) .hero-language-caption {
   }
 
   .entry-title {
-    font-size: 0.73rem;
+    font-size: 0.9rem;
     margin-bottom: 0.6rem;
     letter-spacing: 0.11em;
   }
