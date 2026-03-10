@@ -1276,7 +1276,7 @@ body:not(.hero-active) .hero-language-caption {
   .pfw-logo {
     /* Pull the Paris Fashion Week logo higher so it remains clearly visible
        when the bottom browser bar is present. */
-    margin-top: 1rem;
+    margin-top: 0;
   }
 
   .back-to-top-button img {
@@ -1316,7 +1316,7 @@ body:not(.hero-active) .hero-language-caption {
     right: 2rem;
     /* Raise the back-to-top control further so it is fully visible above
        the iOS bottom browser bar on devices like iPhone 12. */
-    bottom: calc(3.4rem + env(safe-area-inset-bottom));
+    bottom: calc(5.4rem + env(safe-area-inset-bottom));
     margin-top: 0;
     justify-content: flex-end;
   }
