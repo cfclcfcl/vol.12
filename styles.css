@@ -1253,7 +1253,9 @@ body:not(.hero-active) .hero-language-caption {
 
   .contact-inner {
     padding-top: 1rem;
-    padding-bottom: calc(4rem + env(safe-area-inset-bottom));
+    /* Slightly reduce bottom padding so the contact content and footer
+       cluster sit higher above the iOS browser chrome on short viewports. */
+    padding-bottom: calc(3rem + env(safe-area-inset-bottom));
   }
 
   .contact-columns {
@@ -1272,7 +1274,9 @@ body:not(.hero-active) .hero-language-caption {
   }
 
   .pfw-logo {
-    margin-top: 4.5rem;
+    /* Pull the Paris Fashion Week logo higher so it remains clearly visible
+       when the bottom browser bar is present. */
+    margin-top: 2.75rem;
   }
 
   .back-to-top-button img {
@@ -1310,10 +1314,9 @@ body:not(.hero-active) .hero-language-caption {
   .back-to-top-wrapper {
     position: absolute;
     right: 2rem;
-    /* Nudge the control further above the iOS bottom bar while still
-       respecting the safe-area inset so it remains fully visible when
-       snapped on devices like iPhone 12 Pro. */
-    bottom: calc(2.4rem + env(safe-area-inset-bottom));
+    /* Raise the back-to-top control further so it is fully visible above
+       the iOS bottom browser bar on devices like iPhone 12. */
+    bottom: calc(3.4rem + env(safe-area-inset-bottom));
     margin-top: 0;
     justify-content: flex-end;
   }
