@@ -136,6 +136,18 @@ a:focus-visible::after {
   filter: brightness(0.75);
 }
 
+/* Mobile: extend hero image behind notch and Safari browser bar */
+@media (max-width: 640px) {
+  body.hero-active .hero-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+  }
+}
+
 .hero-overlay {
   position: relative;
   z-index: 1;
