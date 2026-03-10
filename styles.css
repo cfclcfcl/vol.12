@@ -177,7 +177,7 @@ a:focus-visible::after {
 
 .hero-volume {
   font-size: var(--hero-volume-size);
-  letter-spacing: 0.28em;
+  letter-spacing: 0.22em;
 }
 
 .hero-language {
